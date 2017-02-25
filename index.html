@@ -1,37 +1,17 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <!-- Plotly.js -->
-   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<title>MathJax TeX Test Page</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
 </head>
-
 <body>
-  <div id="myDiv" style="width: 480px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
-  <script>
-    var trace1 = {
-  x: [1, 2, 3, 4],
-  y: [10, 15, 13, 17],
-  mode: 'markers'
-};
-
-var trace2 = {
-  x: [2, 3, 4, 5],
-  y: [16, 5, 11, 10],
-  mode: 'lines'
-};
-
-var trace3 = {
-  x: [1, 2, 3, 4],
-  y: [12, 9, 15, 12],
-  mode: 'lines+markers'
-};
-
-var data = [ trace1, trace2, trace3 ];
-
-var layout = {
-  title:'Line and Scatter Plot',
-  height: 400,
-  width: 480
-};
-
-Plotly.newPlot('myDiv', data, layout);
-  </script>
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+  $$lim_{x\to \0}{(1+x)^(1/x)}
 </body>
+</html>
